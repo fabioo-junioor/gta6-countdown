@@ -1,0 +1,90 @@
+@import url('https://fonts.cdnfonts.com/css/pricedown');
+                
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body, html {
+  height: 100%;
+  font-family: 'Pricedown Bl', sans-serif;
+  overflow: hidden;
+
+}
+.background-slideshow {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+}
+.background-slideshow img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+
+}
+.background-slideshow img.active {
+  opacity: 1;
+
+}
+.container {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: rgba(0, 0, 0, .4);
+  backdrop-filter: blur(5px);
+  text-align: center;
+
+}
+h1 {
+  font-size: clamp(4rem, 5vw, 3rem);
+  margin-bottom: 2rem;
+  font-weight: 500;
+  background: linear-gradient(to right, #ff00cc, #3333ff, #00ffe1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+.contador {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+
+}
+.bloco {
+  position: relative;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, .2);
+  border: 1px solid #ff00cc80;
+  z-index: 0;
+  min-width: 110px;  
+
+}
+.numero {
+  font-size: clamp(3rem, 6vw, 2.8rem);
+  font-weight: bold;
+  background: #ffffff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+.label {
+  font-size: 1.5rem;
+  color: #ffffffda;
+  letter-spacing: 2px;
+
+}
