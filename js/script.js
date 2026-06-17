@@ -1,4 +1,4 @@
-const dataAlvo = new Date("2026-05-26T12:00:00").getTime();
+const dataAlvo = new Date("2026-11-19T12:00:00").getTime();
 
 function atualizarContador() {
     const agora = new Date().getTime();
