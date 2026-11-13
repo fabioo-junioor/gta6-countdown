@@ -49,7 +49,7 @@ body, html {
 
 }
 h1 {
-  font-size: clamp(4rem, 5vw, 3rem);
+  font-size: clamp(4.5rem, 5vw, 3rem);
   margin-bottom: 2rem;
   font-weight: 500;
   background: linear-gradient(to right, #ff00cc, #3333ff, #00ffe1);
